@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta content="width=device-width, target-densitydpi=device-dpi; initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" /> <!-- 隐藏safari导航栏以及工具栏，全屏显示网页 -->
+	<!-- <meta content="black" name="apple-mobile-web-app-status-bar-style" /> --> <!-- //指定的iphone中safari顶端的状态条的样式 -->
+	<meta content="telephone=no" name="format-detection" /> <!-- //忽略将页面中的数字识别为电话号码 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>蓝积木</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" /> <!-- //设置加入书签的桌面图标-->
+	<link rel="apple-touch-startup-image" href="img/screen.png" /> <!-- //设置启动画面-->
+	<!-- <link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" /> -->
+	<link href="css/jquery.mobile.structure-1.0.1.css" rel="stylesheet" />
+	<link href="css/comm.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div data-role="page" data-theme="f" class="page phone_wrap setting">
+	<form method="post" action="">
+	<!-- header -->
+	<div data-theme="b" data-role="header">
+		<h3>帐号设置</h3>
+		<div class="ljm_btn">
+			<a href="#" data-role="button" data-inline="true" class="ui-btn-left" >保存</a> 
+			<a href="#" data-role="button" data-inline="true" class="ui-btn-right" >取消</a> 
+		</div>
+	</div>
+
+	<!-- content -->
+	<div data-role="content">	
+			
+		<fieldset class="set_act_form">
+			<ul>
+				<li class="set_act_form_item"><label>帐号</label><span class="not_mod">asdfsdfas@gmail.com</span></li>
+				<li class="set_act_form_item bg_white"><label for="uName">姓名</label><input type="text" id="uName" name="uName" class="inp_txt" value="my name" /></li>
+				<li class="set_act_form_item bg_white"><label for="uNickName">昵称</label><input type="text" id="uNickName" name="uNickName" class="inp_txt" value="my nick name" /></li>
+				<li class="set_act_form_item">
+					<label>性别</label>
+					<!--= ljm_hd_tabs -->
+					<div id="switchGender" class="ljm_hd_tabs ljm_tabs_2">
+						<ul class="ljm_hd_tabs_inner">
+							<li class="current"><a href="#"><span>我是男生</span></a></li>
+							<li><a href="#"><span>我是女生</span></a></li>
+						</ul>
+					</div><!--= ljm_hd_tabs -->
+				</li class="set_act_form_item">
+				<li class="set_act_form_item bg_white"><label for="uHome">姓名</label><input type="text" id="uPlace" name="uPlace" class="inp_txt" value="my home" /></li>
+				<li class="set_act_form_item bg_white"><label for="uHometown">昵称</label><input type="text" id="uHometown" name="uHometown" class="inp_txt" value="my hometown" /></li>
+			</ul>
+		</fieldset>
+		
+	</div><!--/ content -->
+
+	<!-- footer -->
+	<div data-theme="b" data-role="footer">
+		<!-- <h3>Footer</h3> -->
+		<ul class="footer_nav">
+			<li><a href="time-line.html" title="消息" class="c1" data-transition="fade"><span>消息</span></a></li>
+			<li><a href="message.html" title="邮件" class="c2" data-transition="fade"><span>邮件</span></a></li>
+			<li><a href="accounts.html" title="帐号" class="c3" data-transition="fade"><span>帐号</span></a></li>
+			<li class="current"><a href="setting.html" title="设置" class="c4" data-transition="fade"><span>设置</span></a></li>
+		</ul>
+	</div>
+	</form>
+</div><!--/ page -->
+
+<!-- jQuery Lib & jQuery Mobile -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.0.1.min.js"></script>
+<script type="text/javascript" src="js/func.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+	<meta content="width=device-width, target-densitydpi=device-dpi; initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" /> <!-- 隐藏safari导航栏以及工具栏，全屏显示网页 -->
+	<!-- <meta content="black" name="apple-mobile-web-app-status-bar-style" /> --> <!-- //指定的iphone中safari顶端的状态条的样式 -->
+	<meta content="telephone=no" name="format-detection" /> <!-- //忽略将页面中的数字识别为电话号码 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>蓝积木</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" /> <!-- //设置加入书签的桌面图标-->
+	<link rel="apple-touch-startup-image" href="img/screen.png" /> <!-- //设置启动画面-->
+	<!-- <link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" /> -->
+	<link href="css/jquery.mobile.structure-1.0.1.css" rel="stylesheet" />
+	<link href="css/comm.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div data-role="page" data-theme="f" class="page phone_wrap comment">
+	<!-- header -->
+	<div data-theme="b" data-role="header" class="header">
+		<!-- <h3>设置</h3> -->
+		<!--= ljm_head_user -->
+		<div class="ljm_head_user">
+			<div class="ljm_head_user_pic"><img src="images/avatar1.jpg" alt="用户头像" class="ljm_avatar" /></div>
+			<div class="ljm_head_user_txt"><span class="icon_sm i_sina">新浪微博</span><cite>用户名称</cite></div>
+		</div>
+		<!--= ljm_btn -->
+		<div class="ljm_btn">
+			<a href="message.html" data-role="button" data-inline="true" class="ui-btn-right" data-transition="fade" >返回</a> 
+		</div>
+	</div>
+
+	<!-- content -->
+	<div data-role="content">
+		<!--= msg_stream -->
+		<ul class="msg_stream">
+			<!--[1条消息流记录]-->
+			<li class="msg_stream_item">
+				<!-- msg_stream_txt(文字内容) -->
+				<div class="msg_stream_txt">
+					<div class="msg_stream_txt_bd">
+						<p class="msg_stream_dp">夜神月那家伙不是一般的让人讨厌夜神月那家伙不是一般的让人讨厌~！杀了那么多人了还不知足。<a href="#">@我的</a></p>
+						<p class="msg_stream_df"><a href="#">@美剧迷：</a>视频: 奥巴马开学演讲：<a href="#" target="#" class="out_link">http://t.cn/h1FXuP</a> 没有一句废话。</p>
+					</div>
+					<div class="msg_stream_txt_ft">
+						<span class="msg_post_from">来自<em>iPhone</em></span>
+						<cite class="msg_post_data">12分钟前</cite>
+					</div>
+				</div>
+			</li>
+			<li class="msg_stream_item">
+				<!-- msg_stream_txt(文字内容) -->
+				<div class="msg_stream_txt">
+					<div class="msg_stream_txt_bd">
+						<p class="msg_stream_dp">夜神月那家伙不是一般的让人讨厌~！杀了那么多人了还不知足。<a href="#">@我的</a></p>
+					</div>
+					<div class="msg_stream_txt_ft">
+						<span class="msg_post_from">来自<em>iPhone</em></span>
+						<cite class="msg_post_data">12分钟前</cite>
+					</div>
+				</div>
+			</li>
+		</ul><!--=/ msg_stream -->
+
+		<!-- mod_switch_tabs -->
+		<div id="CommentTabBox" class="mod_switch_tabs ljm_bd_tabs ljm_tabs_2">
+			<ul class="js_switch_nav">
+				<li class="js_switch_trigger js_active"><a href="javascript:void(0);">评论(<em>24234</em>)</a></li>
+				<li class="js_switch_trigger"><a href="javascript:void(0);">转发(<em>24234</em>)</a></li>
+			</ul>
+			<div class="js_switch_ct">
+				<!--[第1个选项卡内容]-->
+				<div class="js_switch_panel">
+					<!--= msg_stream -->
+					<ul class="msg_stream">
+						<!--[1条消息流记录]-->
+						<li class="msg_stream_item">
+							<!-- msg_stream_txt(文字内容) -->
+							<div class="msg_stream_txt">
+								<div class="msg_stream_txt_hd">
+									<a href="#" class="msg_post_user"><span class="icon_sm i_sina">新浪微博</span><cite>用户名称</cite></a>
+									<cite class="msg_post_data">12分钟前</cite>
+								</div>
+								<div class="msg_stream_txt_bd">
+									<p class="msg_stream_dp">夜神月那家伙不是一般的让人讨厌夜神月那家伙不是一般的让人讨厌~！杀了那么多人了还不知足。<a href="#">@我的</a></p>
+								</div>
+							</div>
+						</li>
+						<!--[1条消息流记录]-->
+						<li class="msg_stream_item">
+							<!-- msg_stream_txt(文字内容) -->
+							<div class="msg_stream_txt">
+								<div class="msg_stream_txt_hd">
+									<a href="#" class="msg_post_user"><span class="icon_sm i_qq">腾讯微博</span><cite>用户名称</cite></a>
+									<cite class="msg_post_data">12分钟前</cite>
+								</div>
+								<div class="msg_stream_txt_bd">
+									<p class="msg_stream_dp">夜神月那家伙不是一般的让人讨厌~！杀了那么多人了还不知足。<a href="#">@我的</a></p>
+								</div>
+							</div>
+						</li>
+					</ul><!--=/ msg_stream -->
+				</div>
+				<!--[第2个选项卡内容]-->
+				<div class="js_switch_panel" style="display:none">
+					<!--= msg_stream -->
+					<ul class="msg_stream">
+						<!--[1条消息流记录]-->
+						<li class="msg_stream_item">
+							<!-- msg_stream_txt(文字内容) -->
+							<div class="msg_stream_txt">
+								<div class="msg_stream_txt_hd">
+									<a href="#" class="msg_post_user"><span class="icon_sm i_qq">腾讯微博</span><cite>用户名称</cite></a>
+									<cite class="msg_post_data">12分钟前</cite>
+								</div>
+								<div class="msg_stream_txt_bd">
+									<p class="msg_stream_dp">夜神月那家伙不是一般的让人讨厌~！杀了那么多人了还不知足。<a href="#">@我的</a></p>
+								</div>
+							</div>
+						</li>
+						<!--[1条消息流记录]-->
+						<li class="msg_stream_item">
+							<!-- msg_stream_txt(文字内容) -->
+							<div class="msg_stream_txt">
+								<div class="msg_stream_txt_hd">
+									<a href="#" class="msg_post_user"><span class="icon_sm i_sina">新浪微博</span><cite>用户名称</cite></a>
+									<cite class="msg_post_data">12分钟前</cite>
+								</div>
+								<div class="msg_stream_txt_bd">
+									<p class="msg_stream_dp">夜神月那家伙不是一般的让人讨厌夜神月那家伙不是一般的让人讨厌~！杀了那么多人了还不知足。<a href="#">@我的</a></p>
+								</div>
+							</div>
+						</li>
+					</ul><!--=/ msg_stream -->
+				</div>
+			</div><!--/ js_switch_ct -->
+		</div><!--/ mod_switch_tabs -->
+
+
+		<!--= ljm_op_btn -->
+		<div class="ljm_op_btn">
+			<a href="javascript:alert('comment')" title="添加留言" class="btn_add_comment">添加留言</a>
+			<a href="message.html" title="返回" class="btn_return" data-transition="fade">返回</a>
+		</div><!--=/ ljm_op_btn -->
+	</div><!--/ content -->
+
+	<!-- footer -->
+	<!-- 
+	<div data-theme="b" data-role="footer">
+		<ul class="footer_nav">
+			<li><a href="time-line.html" title="消息" class="c1" data-transition="fade"><span>消息</span></a></li>
+			<li class="current"><a href="message.html" title="邮件" class="c2" data-transition="fade"><span>邮件</span></a></li>
+			<li><a href="accounts.html" title="帐号" class="c3" data-transition="fade"><span>帐号</span></a></li>
+			<li><a href="setting.html" title="设置" class="c4" data-transition="fade"><span>设置</span></a></li>
+		</ul>
+	</div> -->
+</div><!--/ page -->
+
+<!-- jQuery Lib & jQuery Mobile -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.0.1.min.js"></script>
+
+<!-- Switchable -->
+<script type="text/javascript" src="js/switchable_v1.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var tab = new Switch.Tabs("CommentTabBox");
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<meta content="width=device-width, target-densitydpi=device-dpi; initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" /> <!-- 隐藏safari导航栏以及工具栏，全屏显示网页 -->
+	<!-- <meta content="black" name="apple-mobile-web-app-status-bar-style" /> --> <!-- //指定的iphone中safari顶端的状态条的样式 -->
+	<meta content="telephone=no" name="format-detection" /> <!-- //忽略将页面中的数字识别为电话号码 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>蓝积木</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" /> <!-- //设置加入书签的桌面图标-->
+	<link rel="apple-touch-startup-image" href="img/screen.png" /> <!-- //设置启动画面-->
+	<!-- <link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" /> -->
+	<link href="css/jquery.mobile.structure-1.0.1.css" rel="stylesheet" />
+	<link href="css/comm.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div data-role="page" data-theme="f" class="page phone_wrap login" id="login">
+	<!-- ui-content -->
+	<div data-role="content">
+
+		<!-- mtitle -->
+		<h1 class="mtitle">蓝积木</h1>
+		<form method="post" action="">
+			<!-- mod_switch_tabs -->
+			<div id="logoTabBox" class="mod_switch_tabs login_tab_box">
+		        <ul class="js_switch_nav">
+		            <li class="js_switch_trigger js_active"><a href="javascript:void(0);" class="sm_ljm"><span>蓝积木帐号</span></a></li>
+		            <li class="js_switch_trigger"><a href="javascript:void(0);" class="sm_qq"><span>QQ微博</span></a></li>
+		            <li class="js_switch_trigger"><a href="javascript:void(0);" class="sm_sina"><span>新浪微博</span></a></li>
+		        </ul>
+		        <div class="js_switch_ct">
+		            <div class="js_switch_panel">
+						<!--[蓝积木登录表单]-->
+						<fieldset class="login_form">
+							<ul class="login_form_user">
+								<li><label for="userAccount">帐号</label><input type="text" id="userAccount" name="userAccount" placeholder="accout" class="inp_txt" /></li>
+								<li><label for="userPassword">密码</label><input type="password" id="userPassword" name="userPassword" placeholder="password" class="inp_txt" /></li>
+							</ul>
+						</fieldset><!--/[蓝积木登录表单]-->
+		            </div>
+					<div class="js_switch_panel" style="display:none;">
+						<!--[QQ微博登录表单]-->
+						<fieldset class="login_form">
+							<ul class="login_form_user">
+								<li><label for="userAccount">帐号</label><input type="text" id="userAccount" name="userAccount" placeholder="QQ号码" class="inp_txt" /></li>
+								<li><label for="userPassword">密码</label><input type="password" id="userPassword" name="userPassword" placeholder="password" class="inp_txt" /></li>
+							</ul>
+						</fieldset><!--/[QQ微博登录表单]-->
+		            </div>
+					<div class="js_switch_panel" style="display:none">
+						<!--[新浪微博登录表单]-->
+						<fieldset class="login_form">
+							<ul class="login_form_user">
+								<li><label for="userAccount">帐号</label><input type="text" id="userAccount" name="userAccount" placeholder="新浪微博帐号" class="inp_txt" /></li>
+								<li><label for="userPassword">密码</label><input type="password" id="userPassword" name="userPassword" placeholder="password" class="inp_txt" /></li>
+							</ul>
+						</fieldset><!--/[新浪微博登录表单]-->
+		            </div>
+		        </div><!--/ js_switch_ct -->
+			</div><!--/ mod_switch_tabs -->
+			<!-- login_form_setting -->
+			<ul class="login_form_setting">
+				<li class="ljm_btn">
+					<!-- 
+					<div class="mod_btn btn_reg" aria-disabled="false">
+						<span class="mod_btn_inner">
+							<span class="mod_btn_text">注册蓝积木</span>
+						</span>
+						<a href="sign.html" class="mod_btn_hidden" aria-disabled="false" data-transition="slide">注册蓝积木</a>
+					</div>
+					<div class="mod_btn btn_login" aria-disabled="false">
+						<span class="mod_btn_inner">
+							<span class="mod_btn_text">登 录</span>
+						</span>
+						<button class="mod_btn_hidden" aria-disabled="false">登 录</button>
+					</div> -->
+					<a href="sign.html" data-role="button" data-transition="flip" data-inline="true" >注册蓝积木</a> 
+					<a href="message.html" data-role="button" data-transition="fade" data-inline="true" >登 录</a> 
+					<!-- <button class="btn_login" data-inline="true" >登 录</button> -->
+				</li>
+				<li><input type="checkbox" id="rPwd" name="rPwd" /><label for="rPwd">记住我的密码</label></li>
+				<li><input type="checkbox" id="renb" name="renb" /><label for="renb">自动登录</label></li>
+			</ul><!--/ login_form_setting -->
+		</form>
+	</div><!--/ ui-content -->
+</div><!--/ page -->
+
+
+
+<!-- jQuery Lib & jQuery Mobile -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.0.1.min.js"></script>
+<!-- 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script> -->
+
+<!-- Switchable -->
+<script type="text/javascript" src="js/switchable_v1.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var tab = new Switch.Tabs("logoTabBox");
+	});
+</script>
+<!-- Page Func -->
+<!-- <script type="text/javascript" charset="utf-8" src="js/func.js"></script> -->
+</body>
+</html>

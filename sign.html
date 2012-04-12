@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta content="width=device-width, target-densitydpi=device-dpi; initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" /> <!-- 隐藏safari导航栏以及工具栏，全屏显示网页 -->
+	<!-- <meta content="black" name="apple-mobile-web-app-status-bar-style" /> --> <!-- //指定的iphone中safari顶端的状态条的样式 -->
+	<meta content="telephone=no" name="format-detection" /> <!-- //忽略将页面中的数字识别为电话号码 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>蓝积木</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" /> <!-- //设置加入书签的桌面图标-->
+	<link rel="apple-touch-startup-image" href="img/screen.png" /> <!-- //设置启动画面-->
+	<link href="css/jquery.mobile.structure-1.0.1.css" rel="stylesheet" />
+	<link href="css/comm.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div data-role="page" data-theme="f" class="page phone_wrap login" id="sign">
+	<!-- ui-content -->
+	<div data-role="content">
+		<form method="post" action="">
+			<!-- mtitle -->
+			<h1 class="mtitle">蓝积木</h1>
+			<!-- mod_switch_tabs -->
+			<div id="logoTabBox" class="mod_switch_tabs login_tab_box">
+		        <div class="js_switch_ct">
+		            <div class="js_switch_panel">
+						<!--[蓝积木登录表单]-->
+						<fieldset class="login_form">
+							<ul class="login_form_user">
+								<li><label for="userAccount">帐号</label><input type="text" id="userAccount" name="userAccount" placeholder="accout" class="inp_txt" /></li>
+								<li><label for="userPassword">密码</label><input type="password" id="userPassword" name="userPassword" placeholder="password" class="inp_txt" /></li>
+							</ul>
+						</fieldset><!--/[蓝积木登录表单]-->
+		            </div>
+		        </div><!--/ js_switch_ct -->
+			</div><!--/ mod_switch_tabs -->
+			<!-- login_form_setting -->
+			<ul class="login_form_setting">
+				<li class="ljm_btn">
+					<a href="login.html" data-role="button" data-transition="flip" data-inline="true" >我要登陆</a> 
+					<!-- <button class="btn_login" data-inline="true" >注 册</button> -->
+					<a href="message.html" data-role="button" data-transition="fade" data-inline="true" >注 册</a> 
+				</li>
+				<li><input type="checkbox" id="rPwd" name="rPwd" /><label for="rPwd">记住我的密码</label></li>
+				<li><input type="checkbox" id="renb" name="renb" /><label for="renb">自动登录</label></li>
+			</ul><!--/ login_form_setting -->
+		</form>
+	</div><!--/ ui-content -->
+</div><!--/ page -->
+
+
+<!-- jQuery Lib & jQuery Mobile -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.0.1.min.js"></script>
+</body>
+</html>
