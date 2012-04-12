@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta content="width=device-width, target-densitydpi=device-dpi; initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" /> <!-- 隐藏safari导航栏以及工具栏，全屏显示网页 -->
+	<!-- <meta content="black" name="apple-mobile-web-app-status-bar-style" /> --> <!-- //指定的iphone中safari顶端的状态条的样式 -->
+	<meta content="telephone=no" name="format-detection" /> <!-- //忽略将页面中的数字识别为电话号码 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>蓝积木</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" /> <!-- //设置加入书签的桌面图标-->
+	<link rel="apple-touch-startup-image" href="img/screen.png" /> <!-- //设置启动画面-->
+	<!-- <link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" /> -->
+	<link href="css/jquery.mobile.structure-1.0.1.css" rel="stylesheet" />
+	<link href="css/comm.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div data-role="page" data-theme="f" class="page phone_wrap setting">
+	<!-- header -->
+	<div data-theme="b" data-role="header">
+		<h3>设置</h3>
+	</div>
+
+	<!-- content -->
+	<div data-role="content">
+		<!--= listview -->
+		<ul data-role="listview" data-divider-theme="f" data-inset="true">
+		    <li data-theme="c">
+		        <a href="setting-account.html" data-transition="fade">帐号设置</a>
+		    </li>
+		    <li data-theme="c">
+		        <a href="setting-binding.html" data-transition="fade">绑定微博</a>
+		    </li>
+		    <li data-theme="c">
+		        <a href="#" data-transition="slide">话题设置</a>
+		    </li>
+		</ul><!--=/ listview -->
+	</div><!--/ content -->
+
+	<!-- footer -->
+	<div data-theme="b" data-role="footer">
+		<!-- <h3>Footer</h3> -->
+		<ul class="footer_nav">
+			<li><a href="time-line.html" title="消息" class="c1" data-transition="fade"><span>消息</span></a></li>
+			<li><a href="message.html" title="邮件" class="c2" data-transition="fade"><span>邮件</span></a></li>
+			<li><a href="accounts.html" title="帐号" class="c3" data-transition="fade"><span>帐号</span></a></li>
+			<li class="current"><a href="setting.html" title="设置" class="c4" data-transition="fade"><span>设置</span></a></li>
+		</ul>
+	</div>
+</div><!--/ page -->
+
+<!-- jQuery Lib & jQuery Mobile -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.0.1.min.js"></script>
+</body>
+</html>
